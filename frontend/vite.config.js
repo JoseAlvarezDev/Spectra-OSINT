@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  base: '/spectra-osint/',
+  base: '/Spectra-OSINT/',
 })

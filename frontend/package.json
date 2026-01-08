@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://JoseAlvarezDev.github.io/spectra-osint/",
+  "homepage": "https://JoseAlvarezDev.github.io/Spectra-OSINT/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
