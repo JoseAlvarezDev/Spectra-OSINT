@@ -8,7 +8,7 @@ const Footer = ({ onOpenLicense }) => {
         <footer className="w-full py-3 px-8 border-t border-white/5 bg-black/20 backdrop-blur-sm flex justify-between items-center text-[10px] font-mono tracking-[0.2em] text-gray-500 shrink-0">
             <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
-                    <img src="/spectra-logo.png" alt="" className="w-3 h-3 opacity-50" />
+                    <img src={`${import.meta.env.BASE_URL}spectra-logo.png`} alt="" className="w-3 h-3 opacity-50" />
                     <span className="text-white font-bold">SPECTRA</span>
                 </div>
                 <span className="text-gray-800">|</span>

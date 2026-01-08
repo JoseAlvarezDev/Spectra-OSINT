@@ -42,7 +42,7 @@ export default function SplashScreen({ onComplete }) {
                     <div className="absolute inset-0 bg-cyan-500/20 blur-3xl rounded-full"></div>
 
                     <img
-                        src="/spectra-logo.png"
+                        src={`${import.meta.env.BASE_URL}spectra-logo.png`}
                         alt="SPECTRA Logo"
                         className="w-32 h-32 md:w-48 md:h-48 relative z-10 drop-shadow-[0_0_15px_rgba(0,240,255,0.5)]"
                     />

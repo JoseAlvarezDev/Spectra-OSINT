@@ -73,7 +73,7 @@ function App() {
           <div className="hidden md:flex w-64 glass-panel m-4 flex-col p-6 z-10 border-r-0">
             <div className="flex items-center gap-3 mb-12">
               <div className="p-2 bg-gradient-to-br from-cyan-500/20 to-purple-600/20 rounded-lg border border-cyan-500/30">
-                <img src="/spectra-logo.png" alt="SPECTRA" className="w-8 h-8 object-contain drop-shadow-[0_0_5px_rgba(0,240,255,0.5)]" />
+                <img src={`${import.meta.env.BASE_URL}spectra-logo.png`} alt="SPECTRA" className="w-8 h-8 object-contain drop-shadow-[0_0_5px_rgba(0,240,255,0.5)]" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-white tracking-wider">SPECTRA</h1>
@@ -126,7 +126,7 @@ function App() {
                 >
                   <div className="flex items-center gap-3 mb-12">
                     <div className="p-2 bg-gradient-to-br from-cyan-500/20 to-purple-600/20 rounded-lg border border-cyan-500/30">
-                      <img src="/spectra-logo.png" alt="SPECTRA" className="w-8 h-8 object-contain drop-shadow-[0_0_5px_rgba(0,240,255,0.5)]" />
+                      <img src={`${import.meta.env.BASE_URL}spectra-logo.png`} alt="SPECTRA" className="w-8 h-8 object-contain drop-shadow-[0_0_5px_rgba(0,240,255,0.5)]" />
                     </div>
                     <div>
                       <h1 className="text-2xl font-bold text-white tracking-wider">SPECTRA</h1>

@@ -30,7 +30,7 @@ export default function PrivacyPolicy({ onClose }) {
 
                 <div className="flex flex-col items-center mb-8">
                     <div className="p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/30 shadow-[0_0_15px_rgba(0,240,255,0.1)] mb-4">
-                        <img src="/spectra-logo.png" alt="SPECTRA" className="w-10 h-10 object-contain" />
+                        <img src={`${import.meta.env.BASE_URL}spectra-logo.png`} alt="SPECTRA" className="w-10 h-10 object-contain" />
                     </div>
                     <h1 className="text-2xl font-bold text-white tracking-tight text-center">{t.privacy.title}</h1>
                     <p className="text-xs text-cyan-400 tracking-[0.2em] font-mono uppercase mt-2">{t.privacy.lastUpdated}</p>

@@ -23,9 +23,9 @@ export default function Disclaimer({ onAccept }) {
             >
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-50"></div>
 
-                <div className="flex flex-col items-center text-center space-y-6">
-                    <div className="p-4 bg-cyan-500/10 rounded-2xl border border-cyan-500/30 shadow-[0_0_20px_rgba(0,240,255,0.1)]">
-                        <img src="/spectra-logo.png" alt="SPECTRA" className="w-16 h-16 object-contain drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]" />
+                <div className="flex flex-col items-center mb-8">
+                    <div className="p-4 bg-cyan-500/10 rounded-2xl border border-cyan-500/30 shadow-[0_0_20px_rgba(0,240,255,0.1)] mb-4">
+                        <img src={`${import.meta.env.BASE_URL}spectra-logo.png`} alt="SPECTRA" className="w-16 h-16 object-contain drop-shadow-[0_0_10px_rgba(0,240,255,0.5)]" />
                     </div>
 
                     <div>
