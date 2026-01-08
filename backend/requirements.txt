@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+phonenumbers
+pydantic
+python-multipart
+python-dotenv
+slowapi
