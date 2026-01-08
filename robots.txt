@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# AI Scrapers and LLMs allow-list (Explicitly allowing them for "AI SEO")
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+Sitemap: https://spectra-osint.com/sitemap.xml

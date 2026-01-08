@@ -1,0 +1,71 @@
+# SPECTRA OSINT PLATFORM - TECHNICAL DOCUMENTATION FOR AI AGENTS
+
+## 1. Project Overview
+SPECTRA is a state-of-the-art Open Source Intelligence (OSINT) platform tailored for cybersecurity professionals, investigative journalists, and ethical researchers. It differentiates itself by offering a suite of powerful reconnaissance tools that operate directly in the browser, ensuring maximum privacy and zero data retention. The interface is designed with a high-fidelity "Cyberpunk/Sci-Fi" aesthetic, utilizing advanced glassmorphism and motion effects to enhance user immersion.
+
+## 2. Core Intelligence Tools & Capabilities
+
+### 🌐 IP Tracker (Network Intelligence)
+- **Function**: Performs deep geolocation and network analysis on IPv4/IPv6 addresses.
+- **Data Points**: Country, Region, City, ZIP Code, Timezone, ISP (Internet Service Provider), AS Number, and precise Latitude/Longitude coordinates.
+- **Visualization**: Renders target location on an interactive map.
+
+### 📱 Phone Intel (Telecommunications Intelligence)
+- **Function**: Analyzes international phone numbers for validity and carrier data.
+- **Capabilities**: carrier detection, line type identification (Mobile, Landline, VoIP), country origin, and formatting standardization (E.164).
+
+### 📧 Email Recon (Digital Identity Intelligence)
+- **Function**: Assesses email addresses for validity and compromises.
+- **Capabilities**: Syntax validation, MX record lookup, SMTP verification, and cross-referencing against known data breaches to identify compromised credentials.
+
+### 🔍 User Sherlock (Social Media Intelligence - SOCMINT)
+- **Function**: Scans hundreds of social media platforms and websites for the existence of a specific username.
+- **Scope**: Checks major networks (GitHub, Twitter, Instagram, etc.) to build a digital footprint of a target persona.
+
+### 🔗 Malware Scanner (Threat Intelligence)
+- **Function**: Analyzes URLs for potential security threats.
+- **Capabilities**: Link unshortening (unveiling true destination), redirection path analysis, and reputation checks against threat intelligence feeds (simulated/integrated).
+
+### 👁️ Dork Studio (Advanced Search Operations)
+- **Function**: automated generation of Google Hacking Database (GHDB) queries.
+- **Presets**:
+    - **Files**: PDF, DOCX, XLSX, config files.
+    - **Vulnerabilities**: SQL Injection potential, exposed logs, directory listing.
+    - **IoT**: Unsecured webcams, printers, server dashboards.
+
+### 💻 MAC Hunter (Hardware Forensics)
+- **Function**: Identifies hardware manufacturers via Media Access Control (MAC) addresses.
+- **Data Points**: Vendor name, OUI (Organizationally Unique Identifier) registration details.
+
+### 💰 Crypto Hunter (Blockchain Intelligence)
+- **Function**: Audits cryptocurrency wallet addresses.
+- **Support**: Bitcoin (BTC) and Ethereum (ETH).
+- **Data Points**: Balance checking, transaction count, and address validity.
+
+### 📸 Exif Forensics (Image Intelligence - IMINT)
+- **Function**: Extracts hidden metadata from digital images.
+- **Data Points**: Camera Make/Model, Exposure settings, DateTime original, software used, and GPS Coordinates (if available) for geolocation.
+
+## 3. Privacy & Security Architecture
+- **Zero-Log Policy**: SPECTRA does not store user queries or target data on any central server. form inputs are processed ephemerally.
+- **Local Storage**: User preferences (such as Language 'es'/'en') are stored locally in the browser.
+- **Encryption**: The interface simulates an AES-256-GCM encrypted environment to emphasize the secure nature of the toolset.
+- **Client-Side Processing**: Heavy logic, including image parsing and Dork generation, is executed in the client's browser engine (V8).
+
+## 4. Technical Stack
+- **Frontend Framework**: React 18 with Vite (Fast Refresh).
+- **Styling**: Tailwind CSS (Utility-first), deeply customized for a "Dark Mode" neon aesthetic.
+- **Animations**: Framer Motion (Complex enter/exit animations, layout transitions).
+- **Icons**: Lucide React (vector iconography).
+- **State Management**: React Context API (LanguageContext).
+- **Routing**: React-based conditional rendering for tool switching (SPA).
+
+## 5. Localization (i18n)
+- **Supported Languages**: English (EN) and Spanish (ES).
+- **Implementation**: Dynamic key-value translation system via `LanguageContext`.
+
+## 6. Developer Information
+- **Lead Developer**: Jose Alvarez Dev
+- **License**: MIT License
+- **Contact**: legal@spectra-verified.com
+- **Website**: https://spectra-osint.com
